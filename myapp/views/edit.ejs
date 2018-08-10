@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Post</title> 
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- stylesheet(s) -->
+      <link rel='stylesheet' href='/stylesheets/css/new_post.css' />
+
+    <!-- include libraries(jQuery, bootstrap) -->
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+    <!-- include summernote css/js -->
+      <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+
+
+      <style>
+        nav li {
+            display: inline-block;
+            margin-top: 2.5%;
+            margin-left: 5%;
+        }
+        nav {
+            background-color: black;
+            height: 100px;
+        }
+        #buttonOne{
+            margin-left: 90%;
+            margin-top: 1%;
+        }
+        .signOrLog {
+            background-color: rebeccapurple;
+            padding: 1%;
+        }
+    
+        div.latestPost {
+            margin: 5%;
+            border-style: groove;
+            border-width: 2px;
+            }
+        </style>
+
+  </head>
+  <body>
+
+     <!-- navbar -->
+     <nav>
+        <li> <a href="/">Home</a> |</li>
+        <li> <a href="/create">Create</a> |</li>
+        <li> <a href="/archieve">Archieve</a> |</li>
+        <li> <a href="">Contact</a> </li>
+    </nav>
+      
+    <!-- sing in or out -->
+    <div class="signOrLog">
+        <button id="buttonOne">login</button>
+        <button>sign up</button>
+    </div>
+
+      <!-- form for input -->
+      <form method="POST" action="" style="padding-bottom: 10%"> 
+
+        <div >
+          <label for="">Title</label>
+          <input type="text" class="" name="title" value="<%= posts[id].title %>">
+        </div>
+
+        <div >
+            <label for="">Image URL</label>
+            <input type="text" class="" placeholder="" name="image" value="<%= posts[id].image %>">
+        </div>
+
+        <div >
+          <label for="">Description</label>
+          <input type="text" class="" placeholder="Enter description" name="description" value="<%= posts[id].description %>">
+        </div>
+
+        <!-- content -->
+        <div >
+          <label for="">Content:</label>
+          <textarea id="summernote"  name="content"><%- posts[id].content %></textarea>
+        </div>
+
+        <div >
+            <button type="submit" >Submit</button>
+        </div>
+
+    </form>
+
+    
+
+    <script>
+
+      $(function(){
+
+        $('.post').on('click',function(){
+          var newUser = document.getElementById('#newUser').value;
+          posts.add(newUser);
+          console.log(newUser);
+        })
+      });
+
+      $('#summernote').summernote({
+        height: 300,                 // set editor height
+        minHeight: null,             // set minimum height of editor
+        maxHeight: null,             // set maximum height of editor
+        focus: true                  // set focus to editable area after initializing summernote
+      });
+
+    </script>
+
+  </body>
+</html>

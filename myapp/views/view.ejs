@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0px;
+        }
+        /* nav styles */
+        nav li {
+          display: inline-block;
+          margin-top: 10%;
+          margin-left: 15%;
+          font-size: 200%;
+        }
+  
+        nav ul {
+          display: none;
+        }
+  
+        nav a {
+          color: #ffc300;
+        }
+        
+        nav h1 {
+          margin-top: 10%;
+          margin-left: 35%;
+          font-size: 400%;
+          color: wheat;
+          text-shadow: 4px 4px black;
+          opacity: 1;
+        }
+  
+        nav img {
+          width: 50%;
+          height: 100px;
+        }
+        nav {
+          background-color: black;
+          height: 800px;
+          background-image: url('https://www.toysrus.com.sg/www/4000/files/pageheader-marvelavengers.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: black;
+          border-style: groove;
+          border-width: 0.1px;
+          margin: 0;
+        }
+  
+        /* sign in styles */
+        #buttonOne{
+          margin-left: 90%;
+          margin-top: 1%;
+        }
+        .signOrLog {
+          background-color: rgb(51, 75, 153);
+          padding: 1%;
+        }
+        
+        /* latest post div */
+        div.latestPost {
+          margin: 5%;
+          margin-left: 10%;
+          border-style: groove;
+          border-width: 2px;
+          height: 550px;
+          width: 80%;
+        }
+  
+        div.latestPost img {
+          width: 100%;
+          /* margin-left: 20%; */
+          height: 600px;
+        }
+  
+        div.latestPost p {
+          font-size: 150%;
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+
+        div.latestPost h1 {
+          text-align: center;
+        }
+  
+        div.latestPost {
+          color: rgb(51, 75, 153);
+          height: auto;
+        }
+  
+        div.latestPost q {
+          float: right;
+          margin-right: 4%;
+          font-size: 100%;
+        }
+  
+        div.latestPost button{
+          margin: 5%;
+          font-size: 125%;
+          border: none;
+          background-color: transparent;
+        }
+  
+        div.latestPost button:hover a{
+          color: red;
+        }
+  
+        div.latestPost button a {
+          text-decoration: none;
+          color: rgb(51, 75, 153);
+        }
+  
+        /* header */
+  
+        div.header {
+          width: 80%;
+          margin-left: 10%;
+          margin-top: 5%;
+          background-color: rgb(51, 75, 153);
+          color: white;
+          height: 100px;
+        }
+  
+        div.header h1 {
+          margin-left: 41%;
+          padding-top: 2%;
+        }
+
+        /* sign or log */
+
+      .buttonOne{
+        font-size: 150%;
+        margin-left: 85%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+      }
+
+      .buttonTwo{
+        font-size: 150%;
+      }
+
+      .signOrLog button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: white;
+      }
+      
+      .signOrLog span {
+        color: red;
+        display: inline-block;
+      }
+
+      .signOrLog button:hover {
+        color: red;
+      }
+
+       
+      .signOrLog {
+        background-color: rgb(51, 75, 153);
+        padding: 1%;
+      }
+  
+      </style>
+  
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav>
+        <ul>
+          <li> <a href="/">Home</a></li>
+          <li> <a href="/create">Create</a> </li>
+          <li> <a href="/archieve">Archieve</a> </li>
+          <li> <a href="">Contact</a> </li>
+        </ul>
+        <!-- <img src="../public/images/avenger-logo.png" alt=""> -->
+        <h1>THE AVENGER</h1>
+      </nav>
+
+    <!-- sing in or out -->
+    <div class="signOrLog">
+        <button class="buttonOne">login </button>
+        <span>or</span>
+        <button class="buttonTwo">sign up</button>
+    </div>
+
+    <!-- Latest blog post -->
+    <div class="latestPost">
+      
+        <!-- <h2>Title: <%= posts[posts.length-1].title %> </h2> -->
+        <h1> <%- posts[id].title %> </h1>
+        <img src="<%= posts[id].image %>">
+        <p> <%- posts[id].content %> </p>
+        <!-- <p><%- posts[posts.length-1].content %></p> -->
+        <q><%= posts[id].author %> </q>
+        <button> <a href="/">Go back</a> </button>
+        <button style="display: none"> <a href="/edit/<%= posts[id].id%>">Edit Posts</a> </button>
+      </div>  
+
+  </body>
+</html> 

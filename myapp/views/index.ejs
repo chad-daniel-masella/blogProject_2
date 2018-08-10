@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>home page</title>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0px;
+      }
+      /* nav styles */
+      nav li {
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 15%;
+        font-size: 200%;
+      } 
+
+      nav ul {
+        /* display: none; */
+      }
+
+      nav a {
+        color: #ffc300;
+      }
+      
+      nav h1 {
+        margin-top: 10%;
+        margin-left: 37%;
+        font-size: 400%;
+        color: wheat;
+        text-shadow: 4px 4px black;
+        opacity: 1;
+      }
+
+      nav img {
+        width: 50%;
+        height: 100px;
+      }
+      nav {
+        background-color: black;
+        height: 800px;
+        background-image: url('https://www.toysrus.com.sg/www/4000/files/pageheader-marvelavengers.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black;
+        border-style: groove;
+        border-width: 0.1px;
+        margin: 0;
+      }
+
+     
+      
+      /* latest post div */
+      div.latestPost {
+        margin: 5%;
+        margin-left: 30%;
+        border-style: groove;
+        border-width: 2px;
+        height: 550px;
+        width: 40%;
+      }
+
+      div.latestPost h1 {
+        text-align: center;
+      }
+
+      div.latestPost img {
+        width: 100%;
+        /* margin-left: 20%; */
+        height: 400px;
+      }
+
+      div.latestPost p {
+        font-size: 150%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      div.latestPost {
+        color: rgb(51, 75, 153);
+        height: auto;
+      }
+
+      div.latestPost q {
+        float: right;
+        margin-right: 4%;
+        font-size: 100%;
+        color: red;
+      }
+
+      div.latestPost button{
+        /* margin: 5%; */
+        font-size: 125%;
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+      }
+
+      div.latestPost button:hover a{
+        color: red;
+      }
+
+      div.latestPost button a {
+        text-decoration: none;
+        color: rgb(51, 75, 153);
+      }
+
+      div.buttons {
+        margin: 5%;
+      }
+
+      /* header */
+
+      div.header {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        background-color: rgb(51, 75, 153);
+        color: white;
+        height: 100px;
+      }
+
+      div.header h1 {
+        margin-left: 41%;
+        padding-top: 3%;
+      }
+
+      /* sign or log */
+
+      .buttonOne{
+        font-size: 150%;
+        margin-left: 85%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+      }
+
+      .buttonOne a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .buttonOne a:hover {
+        color: red;
+      }
+
+      .buttonTwo{
+        font-size: 150%;
+      }
+
+      .signOrLog button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: white;
+      }
+      
+      .signOrLog span {
+        color: red;
+        display: inline-block;
+      }
+
+      .signOrLog button:hover {
+        color: red;
+      }
+
+       
+      .signOrLog {
+        background-color: rgb(51, 75, 153);
+        padding: 1%;
+      }
+
+      /* MORE RELEVANT BLOG POSTS */
+
+       div.containerBlog {
+          margin-left: 25%;
+          margin-top: 10%;
+          border-style: groove;
+          border-width: 0.5px;
+          width: 50%;
+          height: 750px;
+        }
+
+        div.title h3 {
+          text-align: center;
+          font-size: 200%;
+          color: red;
+        }
+
+        div.imageHolder img {
+          width: 100%;
+        }
+
+        div.content {
+          font-size: 150%;
+          padding: 10%;
+          text-align: center;
+          color: rgb(51, 75, 153);
+        }
+
+        div.author q{
+          float: right;
+          margin: 5%;
+          color: red;
+        }
+
+        div.author button {
+          margin-top: 5%;
+          border: none;
+          background-color: transparent;
+          font-size: 120%;
+        }
+
+        div.author a {
+          text-decoration: none;
+          color: rgb(51, 75, 153);
+        }
+
+        div.author a:hover {
+          color: red;
+        }
+
+        /* archive content */
+
+        div.archiveContent {
+          height: auto;
+          overflow: hidden;
+        }
+
+        #signUp {
+          color: white;
+        }
+
+        #signUp:hover {
+          color: red;
+        }
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav>
+      <h1>THE AVENGER</h1>
+      <ul style="display: none;">
+        <li> <a href="/">Home</a></li>
+        <li> <a href="/create">Create</a> </li>
+        <li> <a href="/archieve">Archieve</a> </li>
+        <li> <a href="">Contact</a> </li>
+      </ul>
+      <!-- <img src="../public/images/avenger-logo.png" alt=""> -->
+    </nav>
+
+    <!-- sing in or out -->
+    <div class="signOrLog">
+        <button class="buttonOne"> login </button>
+        <span>or</span>
+        <button class="buttonTwo" > <a href="/signUp" style="text-decoration: none;color: white;" id="signUp">sign up</a></button>
+    </div>
+
+    <div class="header">
+      <h1>Latest Post</h1>
+    </div>
+
+    <!-- Latest blog post -->
+    <div class="latestPost">
+      
+      <!-- <h2>Title: <%= posts[posts.length-1].title %> </h2> -->
+      <h1> <%= posts[posts.length-1].title %> </h1>
+      <img src="<%= posts[posts.length-1].image %>">
+      <p> <%= posts[posts.length-1].description %> </p>
+      <!-- <p><%- posts[posts.length-1].content %></p> -->
+      <q><%= posts[posts.length-1].author %> </q>
+
+      <div class="buttons">
+        <button> <a href="/view/<%= posts[posts.length-1].id%>">Read Full Article</a> </button>
+        <button> <a href="/edit/<%= posts[posts.length-1].id%>" style="display: none;">Edit Posts</a> </button>
+        <button> <a href="/delete/<%= posts[posts.length-1].id%>" style="display: none;">Delete Posts</a> </button>
+      </div>
+      
+
+    </div>
+
+    <div class="header">
+      <h1>More Posts</h1>
+    </div>
+
+    <% if(posts){ %>
+      <%  for (let i = posts.length - 1; i >= 0 ; i--) { %>
+
+      <div class="">
+        <div class="containerBlog archiveContent">
+        
+          <div class="title">
+            <h3 class=""><%= posts[i].title %></h3>
+          </div>
+
+          <div class="">
+              <div class="imageHolder" id="<%= posts[i].id %>"> <img src="<%= posts[i].image %>" alt="">  </div>
+              <div class="content"> <%- posts[i].description %></div>
+              
+          </div>
+
+          <div class="author"> 
+              <button> <a href="/view/<%= posts[i].id %>">Read Full Article</a> </button>
+              <button> <a href="/edit/<%= posts[i].id%>" style="display: none;">Edit Posts</a> </button>
+              <button> <a href="/delete/<%= posts[i].id%>" style="display: none;">Delete Posts</a> </button>
+              <q><%= posts[i].author %> </q>
+          </div>
+
+        </div>
+
+      </div>
+
+      <% } %>
+
+    <% } %>
+
+    <script>
+      
+    
+    </script>
+
+  </body>
+</html>
