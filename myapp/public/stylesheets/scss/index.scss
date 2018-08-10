@@ -1,0 +1,314 @@
+/* home page styles */
+
+/* body styles */
+body {
+    margin: 0;
+    padding: 0px;
+  }
+ 
+  /* nav styles */
+  nav li {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 200%;
+  } 
+
+  // targets ul in nav
+  nav ul {
+    margin-top: 10%;
+    margin-left: -5%;
+    color: white;
+
+    // targets links in li in nav
+    li {
+
+        a {
+            color: silver;
+            text-decoration: none;
+            text-shadow: 4px 4px black;
+            font-size: auto;
+            transition: font-size .5s;
+        }
+
+        // hover effect to links in nav
+        a:hover {
+            color: #334b99;
+            font-size: 120%;
+        }
+    }
+  }
+
+  // targets nav links
+  nav a {
+    color: #ffc300;
+  }
+  
+  // targets nav header
+  nav h1 {
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 500%;
+    color: wheat;
+    text-shadow: 4px 4px black;
+    opacity: 1;
+  }
+// nav image
+  nav img {
+    width: 50%;
+    height: 100px;
+  }
+
+  // targets entire nav
+  nav {
+    background-color: black;
+    height: 800px;
+    // /stylesheets/index.css
+    background-image: url('../../images/header-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: groove;
+    border-width: 0.1px;
+    margin: 0;
+  }
+
+ 
+  
+  /* latest post div */
+  div.latestPost {
+    margin: 5%;
+    margin-left: 30%;
+    border-style: groove;
+    border-width: 2px;
+    height: 550px;
+    width: 40%;
+  }
+// targets latest post div
+  div.latestPost h1 {
+    text-align: center;
+    
+  }
+// targets latest post div image
+  div.latestPost img {
+    width: 100%;
+    /* margin-left: 20%; */
+    height: 400px;
+  }
+
+  // latest post paragraph
+  div.latestPost p {
+    font-size: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  // targets latest post div - entire div
+  div.latestPost {
+    color: rgb(51, 75, 153);
+    height: auto;
+  }
+
+  // targets latest post quote
+  div.latestPost q {
+    float: right;
+    margin-right: 4%;
+    font-size: 100%;
+    color: red;
+  }
+
+  // targets button
+  div.latestPost button{
+    /* margin: 5%; */
+    font-size: 125%;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  // hover effect for button
+  div.latestPost button:hover a{
+    color: red;
+  }
+// styles button link
+  div.latestPost button a {
+    text-decoration: none;
+    color: rgb(51, 75, 153);
+  }
+
+  // targets all buttons
+  div.buttons {
+    margin: 5%;
+  }
+
+  /* header */
+
+  // targets div header
+  div.header {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: rgb(51, 75, 153);
+    color: white;
+    height: 100px;
+  }
+
+  // targets div header header 
+  div.header h1 {
+   text-align: center;
+    padding-top: 3%;
+  }
+
+  /* sign or log */
+// targets button one class
+  .buttonOne{
+    font-size: 150%;
+    margin-left: 85%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  // button one link
+  .buttonOne a {
+    text-decoration: none;
+    color: white;
+  }
+// hover effect
+  .buttonOne a:hover {
+    color: red;
+  }
+
+  // button two 
+  .buttonTwo{
+    font-size: 150%;
+  }
+// button two link
+  .buttonTwo a {
+    text-decoration: none;
+    color: white;
+  }
+
+  // hover effect for button two
+  .buttonTwo a:hover {
+    color: red;
+  }
+
+  // sign  and log buttons are targetted
+  .signOrLog button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  
+  // span in button link
+  .signOrLog span {
+    color: red;
+    display: inline-block;
+  }
+
+  // hover effect
+  .signOrLog button:hover {
+    color: red;
+  }
+
+  //  sign or log class - holder
+  .signOrLog {
+    background-color: rgb(51, 75, 153);
+    padding: 1%;
+  }
+
+  /* MORE RELEVANT BLOG POSTS */
+
+  // container blog div class styles
+   div.containerBlog {
+      margin-left: 25%;
+      margin-top: 10%;
+      border-style: groove;
+      border-width: 0.5px;
+      width: 50%;
+      height: 750px;
+    }
+
+    // header title 
+    div.title h3 {
+      text-align: center;
+      font-size: 200%;
+      color: red;
+    }
+
+    // image holder
+    div.imageHolder img {
+      width: 100%;
+    }
+
+    // content
+    div.content {
+      font-size: 150%;
+      padding: 10%;
+      text-align: center;
+      color: rgb(51, 75, 153);
+    }
+
+    // quote style in blog post
+    div.author q{
+      float: right;
+      margin: 5%;
+      color: red;
+    }
+// button in blog post
+    div.author button {
+      margin-top: 5%;
+      border: none;
+      background-color: transparent;
+      font-size: 120%;
+    }
+// link in blog post
+    div.author a {
+      text-decoration: none;
+      color: rgb(51, 75, 153);
+    }
+// hover effect
+    div.author a:hover {
+      color: red;
+    }
+
+    /* archive content */
+
+// targets archive content
+    div.archiveContent {
+      height: auto;
+      overflow: hidden;
+    }
+// sign up content
+    #signUp {
+      color: white;
+    }
+// hover effect
+    #signUp:hover {
+      color: red;
+    }
+
+    // footer 
+
+    footer {
+        height: 400px;
+        width: 100%;
+        background-color: black;
+        margin-top: 10%;
+        // background-image: url("../../images/footer-image.png");
+        // background-size: cover;
+        // background-repeat: no-repeat;
+// footer image
+        img {
+            width: 25%;
+            margin-left: 37.5%;
+        }
+
+        // footer header
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 350%;
+        }
+    }

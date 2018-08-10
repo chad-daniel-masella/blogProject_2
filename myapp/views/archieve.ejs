@@ -9,162 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- stylsheet(s) -->
-    <link rel='stylesheet' href='/stylesheets/css/index.css'>
+    <!-- <link rel='stylesheet' href='/stylesheets/css/index.css'> -->
 
-    <style>
-
-      /* nav styles */
-        nav li {
-            display: inline-block;
-            margin-top: 2.5%;
-            margin-left: 5%;
-        }
-        nav {
-            background-color: black;
-            height: 100px;
-        }
-        #buttonOne{
-            margin-left: 90%;
-            margin-top: 1%;
-        }
-        .signOrLog {
-            background-color: rebeccapurple;
-            padding: 1%;
-        }
-
-        /* blog */
-        div.containerBlog {
-          margin-left: 25%;
-          margin-top: 10%;
-          border-style: groove;
-          border-width: 0.5px;
-          width: 50%;
-          height: 750px;
-        }
-
-        div.title h3 {
-          text-align: center;
-          font-size: 200%;
-        }
-
-        div.imageHolder img {
-          width: 100%;
-        }
-
-        div.content {
-          font-size: 150%;
-          padding-left: 10%;
-          padding-right: 10%;
-        }
-
-        div.author q{
-          float: right;
-          margin: 5%;
-        }
-
-        div.author button {
-          margin-top: 5%;
-          border: none;
-          background-color: transparent;
-          font-size: 120%;
-        }
-
-        div.author a {
-          text-decoration: none;
-          color: rgb(51, 75, 153);
-        }
-
-        div.author a:hover {
-          color: red;
-        }
-
-        /* archive content */
-
-        div.archiveContent {
-          height: auto;
-          overflow: hidden;
-        }
-
-        
-        body {
-        margin: 0;
-        padding: 0px;
-      }
-      /* nav styles */
-      nav li {
-        display: inline-block;
-        margin-top: 10%;
-        margin-left: 15%;
-        font-size: 200%;
-      } 
-
-      nav ul {
-        /* display: none; */
-      }
-
-      nav a {
-        color: #ffc300;
-      }
-      
-      nav h1 {
-        margin-top: 10%;
-        margin-left: 37%;
-        font-size: 400%;
-        color: wheat;
-        text-shadow: 4px 4px black;
-        opacity: 1;
-      }
-
-      nav img {
-        width: 50%;
-        height: 100px;
-      }
-      nav {
-        background-color: black;
-        height: 800px;
-        background-image: url('https://www.toysrus.com.sg/www/4000/files/pageheader-marvelavengers.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: black;
-        border-style: groove;
-        border-width: 0.1px;
-        margin: 0;
-      }
-
-       .signOrLog button {
-        background-color: transparent;
-        outline: none;
-        border: none;
-        color: white;
-      }
-      
-      .signOrLog span {
-        color: red;
-        display: inline-block;
-      }
-
-      .signOrLog button:hover {
-        color: red;
-      }
-
-       
-      .signOrLog {
-        background-color: rgb(51, 75, 153);
-        padding: 1%;
-      }
-      
-      .buttonOne{
-        font-size: 150%;
-        margin-left: 85%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-      }
-
-      .buttonTwo{
-        font-size: 150%;
-      }
-
-    </style>
+    <link rel="stylesheet" href="/stylesheets/css/archive.css">
 
   </head>
   <body>
@@ -172,25 +19,26 @@
       
     <!-- navbar -->
     <nav>
+        <h1>THE AVENGER</h1>
         <ul>
           <li> <a href="/">Home</a></li>
           <li> <a href="/create">Create</a> </li>
           <li> <a href="/archieve">Archieve</a> </li>
-          <li> <a href="">Contact</a> </li>
+          <!-- <li> <a href="">Contact</a> </li> -->
         </ul>
         <!-- <img src="../public/images/avenger-logo.png" alt=""> -->
-        <h1>THE AVENGER</h1>
+        
       </nav>
   
       <!-- sing in or out -->
       <div class="signOrLog">
-          <button class="buttonOne">login </button>
+          <button class="buttonOne"> <a href="/login">login</a> </button>
           <span>or</span>
-          <button class="buttonTwo">sign up</button>
+          <button class="buttonTwo"> <a href="/signUp">sign up</a> </button>
       </div>
 
       
-
+<!-- content posts -->
     <div class="">
       <div class="">
 
@@ -229,6 +77,11 @@
 
     </div>
 
+    <footer>
+
+        <img src="/images/footer-image.png" alt="">
+        <h1>THE AVENGER &#169;</h1>
+    </footer>
     
   </body>
 </html>

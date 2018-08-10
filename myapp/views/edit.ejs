@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New Post</title> 
+    <title>New Post</title>  
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,49 +17,34 @@
       <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
       <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 
-
+      <link rel='stylesheet' href='/stylesheets/css/edit.css'/>
       <style>
-        nav li {
-            display: inline-block;
-            margin-top: 2.5%;
-            margin-left: 5%;
-        }
-        nav {
-            background-color: black;
-            height: 100px;
-        }
-        #buttonOne{
-            margin-left: 90%;
-            margin-top: 1%;
-        }
-        .signOrLog {
-            background-color: rebeccapurple;
-            padding: 1%;
-        }
-    
-        div.latestPost {
-            margin: 5%;
-            border-style: groove;
-            border-width: 2px;
-            }
+        
         </style>
 
   </head>
   <body>
 
-     <!-- navbar -->
-     <nav>
-        <li> <a href="/">Home</a> |</li>
-        <li> <a href="/create">Create</a> |</li>
-        <li> <a href="/archieve">Archieve</a> |</li>
-        <li> <a href="">Contact</a> </li>
-    </nav>
+    <!-- navbar --> 
+    <nav>
+        <h1>THE AVENGER</h1>
+        <ul>
+          <li> <a href="/">Home</a></li>
+          <li> <a href="/create">Create</a> </li>
+          <li> <a href="/archieve">Archieve</a> </li>
+          <!-- <li> <a href="">Contact</a> </li> -->
+        </ul>
+        <!-- <img src="../public/images/avenger-logo.png" alt=""> -->
+      </nav>
       
     <!-- sing in or out -->
     <div class="signOrLog">
-        <button id="buttonOne">login</button>
-        <button>sign up</button>
+        <button class="buttonOne"> <a href="/login" > login </a> </button>
+        <span>or</span>
+        <button class="buttonTwo" > <a href="/signUp" id="signUp">sign up</a></button>
     </div>
+    
+    <div class="header"> <h1>Edit Post</h1> </div>
 
       <!-- form for input -->
       <form method="POST" action="" style="padding-bottom: 10%"> 
@@ -80,8 +65,8 @@
         </div>
 
         <!-- content -->
-        <div >
-          <label for="">Content:</label>
+        <div class="summerNote">
+          <label for="" class="">Content:</label>
           <textarea id="summernote"  name="content"><%- posts[id].content %></textarea>
         </div>
 
@@ -91,7 +76,11 @@
 
     </form>
 
-    
+    <footer>
+
+        <img src="/images/footer-image.png" alt="">
+        <h1>THE AVENGER &#169;</h1>
+    </footer>
 
     <script>
 

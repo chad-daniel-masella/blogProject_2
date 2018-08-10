@@ -19,7 +19,7 @@ router.get('/:id', function(req, res, next) {
 
   var id = req.params.id;
     var posts = dataBase.posts;
-    
+     
     request({
       uri: "http://localhost:8000/posts/" + req.params.id,
       method: "DELETE",

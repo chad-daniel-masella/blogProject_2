@@ -20,8 +20,8 @@ router.get('/:id', function(req, res, next) {
         // set id to i(index of post)
         id = i;
       }
-    }
-
+    } 
+ 
     
   res.render('view', { 
     posts: posts,

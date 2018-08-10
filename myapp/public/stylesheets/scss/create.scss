@@ -1,0 +1,292 @@
+// create styles
+
+// body
+body {
+    margin: 0;
+    padding: 0px;
+  }
+
+  /* nav styles */
+  nav li {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 200%;
+  } 
+
+  // nav lists
+  nav ul {
+    margin-top: 15%;
+    margin-left: -5%;
+    color: white;
+
+    // list
+    li {
+
+      // link
+        a {
+            color: silver;
+            text-decoration: none;
+            text-shadow: 4px 4px black;
+            font-size: auto;
+            transition: font-size .5s;
+        }
+
+        // hover effect
+        a:hover {
+            color: #334b99;
+            font-size: 120%;
+            text-decoration: none;
+        }
+    }
+  }
+
+  // nav link
+  nav a {
+    color: #ffc300;
+  }
+  
+  // nav header
+  nav h1 {
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 500%;
+    color: wheat;
+    text-shadow: 4px 4px black;
+    opacity: 1;
+  }
+
+  // nav image
+  nav img {
+    width: 50%;
+    height: 100px;
+  }
+  
+  // nav
+  nav {
+    background-color: black;
+    height: 800px;
+    // /stylesheets/index.css
+    background-image: url('../../images/header-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: groove;
+    border-width: 0.1px;
+    margin: 0;
+  }
+
+  // buttons
+  .buttonOne{
+    font-size: 150%;
+    margin-left: 86%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  // link
+  .buttonOne a {
+    text-decoration: none;
+    color: white;
+  }
+
+  // hover effect
+  .buttonOne a:hover {
+    text-decoration: none;
+    color: red;
+  }
+
+  // buttons
+  .buttonTwo{
+    font-size: 150%;
+    margin-top: -1%;
+  }
+
+  // link
+  .buttonTwo a {
+    text-decoration: none;
+    color: white;
+  }
+
+  // hover effect
+  .buttonTwo a:hover {
+    color: red;
+  }
+
+  // button sign in and out
+  .signOrLog button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  // span 
+  .signOrLog span {
+    color: red;
+    display: inline-block;
+  }
+
+  // hover effect
+  .signOrLog button:hover {
+    color: red;
+  }
+
+  //  sign in and out class
+  .signOrLog {
+    background-color: rgb(51, 75, 153);
+    padding: 1%;
+  }
+  /* sign or log */
+
+  .buttonOne{
+      display: inline-block;
+    font-size: 150%;
+    margin-left: 86%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  // buttons
+  .buttonTwo{
+    display: inline-block;
+    margin-top: -5.25%;
+    // margin-left: -1%;
+    font-size: 150%;
+    // margin-left: 10%;
+    float: right;
+  }
+
+  // buttons
+  .signOrLog button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  
+  // span
+  .signOrLog span {
+    color: red;
+    display: inline-block;
+  }
+
+  // hover effect
+  .signOrLog button:hover {
+    color: red;
+  }
+
+   
+  .signOrLog {
+    background-color: rgb(51, 75, 153);
+    padding: 1%;
+  }
+  
+  /* header */
+
+  // header
+  div.header {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: rgb(51, 75, 153);
+    color: white;
+    height: 100px;
+  }
+
+  // div header
+  div.header h1 {
+    text-align: center;
+    padding-top: 3%;
+  }
+  
+  // form
+  form {
+    width: 80%;
+    margin-left: 10%;
+    border-style: groove;
+    border-width: .5%;
+  }
+
+  // form label
+  form div label{
+
+    margin-left: 45%;
+    margin-top: 5%;
+  }
+
+  // form input
+  form div input {
+    margin-left: 40%;
+  }
+
+  // input
+  #authorInput {
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  // input
+  #titleInput {
+    margin-left: 30%;
+    width: 40%;
+    margin-top: 5%;
+    // height: 80px;
+    // font-size: 150%;
+  }
+
+//   #titleInput::-webkit-input-placeholder{
+//     /* width: 40%;
+//     margin-left: 30%; */
+//     text-align: center; 
+//   }
+
+// summernot
+div.summerNote {
+    width: 50%;
+    margin-left: 25%;
+}
+
+// buttons
+div button {
+    margin-left: 48%;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: transparent;
+    border-style: groove;
+    font-size: auto;
+    transition: font-size .5s;
+    border: none;
+}
+
+// hover effect
+div button:hover {
+    // background-color: black;
+    color: silver;
+    // border: none;
+    font-size: 120%;
+}
+
+// footer 
+
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    margin-top: 10%;
+    // background-image: url("../../images/footer-image.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    // footer image
+    img {
+        width: 25%;
+        margin-left: 37.5%;
+    }
+
+    // footer header
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 350%;
+    }
+}

@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Users = require('../users.json');
 var request = require('request');
-
+ 
 /* GET signUp page. */
 router.get('/', function(req, res, next) {
   res.render('signUp', { users: Users.users });

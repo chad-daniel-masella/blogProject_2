@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>home page</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>New Post</title>  
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- stylesheet(s) -->
+      <link rel='stylesheet' href='/stylesheets/css/new_post.css' />
+
+    <!-- include libraries(jQuery, bootstrap) -->
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+    <!-- include summernote css/js -->
+      <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+
+      <link rel='stylesheet' href='/stylesheets/css/delete.css'/>
+      <style>
+        
+        </style>
 
   </head>
   <body>
-  <h1>Succeessfully Deleted</h1>
+
+    <!-- navbar --> 
+    <nav>
+        <h1>THE AVENGER</h1>
+        <ul>
+          <li> <a href="/">Home</a></li>
+          <li> <a href="/create">Create</a> </li>
+          <li> <a href="/archieve">Archieve</a> </li>
+          <!-- <li> <a href="">Contact</a> </li> -->
+        </ul>
+        <!-- <img src="../public/images/avenger-logo.png" alt=""> -->
+      </nav>
+      
+    <!-- sing in or out -->
+    <div class="signOrLog">
+        <button class="buttonOne"> <a href="/login" > login </a> </button>
+        <span>or</span>
+        <button class="buttonTwo" > <a href="/signUp" id="signUp">sign up</a></button>
+    </div>
+    
+    <div class="header"> <h1>Successfully Deleted Post</h1> </div>
+
+      <!-- form for input -->
+      
+
+    <footer>
+
+        <img src="/images/footer-image.png" alt="">
+        <h1>THE AVENGER &#169;</h1>
+    </footer>
+
+    
 
   </body>
 </html>

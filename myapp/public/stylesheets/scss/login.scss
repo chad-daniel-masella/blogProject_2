@@ -1,0 +1,279 @@
+// login styles
+  
+  /* header */
+
+  div.header {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: rgb(51, 75, 153);
+    color: white;
+    height: 100px;
+  }
+
+  // header header styles
+  div.header h1 {
+    text-align: center;
+    padding-top: 3%;
+  }
+  
+  // form target styles
+  form {
+    width: 80%;
+    margin-left: 10%;
+    border-style: groove;
+    border-width: .5%;
+  }
+
+  // form labels targeted
+  form div label{
+
+    margin-left: 45%;
+    margin-top: 5%;
+  }
+// form input styles
+  form div input {
+    margin-left: 40%;
+  }
+
+  // styles placeholder inside the input
+  // of the form
+  input::-webkit-input-placeholder {
+      text-align: center;
+  }
+
+  // input inside the form
+  input {
+      margin: 1%;
+  }
+
+   // footer 
+
+   footer {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    margin-top: 10%;
+    // background-image: url("../../images/footer-image.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+// footer image
+    img {
+        width: 25%;
+        margin-left: 37.5%;
+    }
+// footer header
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 350%;
+    }
+}
+
+/* body styles */
+body {
+    margin: 0;
+    padding: 0px;
+  }
+
+  /* nav styles */
+  nav li {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 200%;
+  } 
+// nav lists 
+  nav ul {
+    margin-top: 15%;
+    margin-left: -5%;
+    color: white;
+// list
+    li {
+// links
+        a {
+            color: silver;
+            text-decoration: none;
+            text-shadow: 4px 4px black;
+            font-size: auto;
+            transition: font-size .5s;
+        }
+// hover effect
+        a:hover {
+            color: #334b99;
+            font-size: 120%;
+            text-decoration: none;
+        }
+    }
+  }
+
+  // nav link
+  nav a {
+    color: #ffc300;
+  }
+  
+  // nav header 1
+  nav h1 {
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 500%;
+    color: wheat;
+    text-shadow: 4px 4px black;
+    opacity: 1;
+  }
+
+  // nav image
+  nav img {
+    width: 50%;
+    height: 100px;
+  }
+
+  // nav
+  nav {
+    background-color: black;
+    height: 800px;
+    // /stylesheets/index.css
+    background-image: url('../../images/header-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-style: groove;
+    border-width: 0.1px;
+    margin: 0;
+  }
+
+ 
+  
+  /* latest post div */
+  div.latestPost {
+    margin: 5%;
+    margin-left: 30%;
+    border-style: groove;
+    border-width: 2px;
+    height: 550px;
+    width: 40%;
+  }
+
+  // latest post header
+  div.latestPost h1 {
+    text-align: center;
+    
+  }
+
+  // latest post image
+  div.latestPost img {
+    width: 100%;
+    /* margin-left: 20%; */
+    height: 400px;
+  }
+
+  // latest post paragraph
+  div.latestPost p {
+    font-size: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  // latest post all content targeted
+  div.latestPost {
+    color: rgb(51, 75, 153);
+    height: auto;
+  }
+
+  // latest post quote
+  div.latestPost q {
+    float: right;
+    margin-right: 4%;
+    font-size: 100%;
+    color: red;
+  }
+
+  // latest post button
+  div.latestPost button{
+    /* margin: 5%; */
+    font-size: 125%;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  // hover effect
+  div.latestPost button:hover a{
+    color: red;
+  }
+
+  // link
+  div.latestPost button a {
+    text-decoration: none;
+    color: rgb(51, 75, 153);
+  }
+
+  // buttons
+  div.buttons {
+    margin: 5%;
+  }
+
+  /* header */
+
+
+  /* sign or log */
+
+  // first button
+  .buttonOne{
+    font-size: 150%;
+    margin-left: 85%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  // button link
+  .buttonOne a {
+    text-decoration: none;
+    color: white;
+  }
+
+  // hover efect
+  .buttonOne a:hover {
+    color: red;
+  }
+
+  // button two
+  .buttonTwo{
+    font-size: 150%;
+  }
+
+  // button link
+  .buttonTwo a {
+    text-decoration: none;
+    color: white;
+  }
+
+  // button two hover effect
+  .buttonTwo a:hover {
+    color: red;
+  }
+
+  // sign and log button targetted
+  .signOrLog button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  
+  // span button targetted
+  .signOrLog span {
+    color: red;
+    display: inline-block;
+  }
+
+  // hover effect
+  .signOrLog button:hover {
+    color: red;
+  }
+
+  //  sign and log targeted
+  .signOrLog {
+    background-color: rgb(51, 75, 153);
+    padding: 1%;
+  }
